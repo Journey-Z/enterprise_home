@@ -6,6 +6,7 @@
     <meta http-equiv="Content=Language" content="关键字关键字关键字">
     <meta name="keywords" content="深圳公众信息技术有限公司">
     <meta name="description" content="深圳公众信息技术有限公司">
+    <link href="{{asset("assets/images/dongya.ico")}}" rel="shortcut icon" />
     <link rel="stylesheet" type="text/css" href="{{asset("assets/css/style.css")}}">
     <script type="text/javascript" src="{{asset("assets/js/jquery/jquery-3.0.0.min.js")}}"></script>
     <script type="text/javascript" src="{{asset("assets/js/self/index.js")}}"></script>

@@ -34,7 +34,6 @@ _ide_helper.php
 .tags
 
 #public assets
-public/assets
 public/build
 
 #public file

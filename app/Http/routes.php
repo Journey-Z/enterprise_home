@@ -12,3 +12,4 @@
 */
 
 Route::get('/', ['uses' => 'HomeController@getHomePage']);
+Route::get('/home/{category_name}', ['as' => 'category_detail','uses' => 'HomeController@getCategoryDetail']);
