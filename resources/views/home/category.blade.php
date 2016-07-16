@@ -5,7 +5,7 @@
     @include("home.menu")
 
     <div class="box-right fr">
-        <div class="place-title zoom"><span class="fr place">您的当前位置：<a href="/">首页</a> - <a href="/about/index.html">关于我们</a> - <span>公司简介</span></span> <img src="/Public/home/images/icon/tb1.png"> 公司简介</div>
+        <div class="place-title zoom"><span class="fr place">您的当前位置：<a href="/">首页</a> - <a href="{{route('category_detail', ['category_name' => $category_name])}}">{{$title}}</a> - <span>{{$breadcrumb}}</span></span> <img src="/Public/home/images/icon/tb1.png"> 公司简介</div>
         <div class="content editor" style="font-size:14px;color:#666666;">
             <p><span style="font-size:16px"><strong><img alt="" src="file:///C:/Users/lenovo/Desktop/公司简介6_副本.jpg" />&nbsp; &nbsp; 深圳公众信息技术有限公司</strong>（以下简称&ldquo;公众信息&rdquo;）<strong>系深圳光启高等理工研究院核心通讯技术转化平台公司。</strong><br />
 <br />
