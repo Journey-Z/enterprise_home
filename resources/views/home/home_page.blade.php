@@ -89,7 +89,7 @@
     </div>
     <!-- Bullet Navigator -->
     <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
-        <div data-u="prototype" style="width:12px;height:12px;"></div>
+        <div data-u="prototype" style="width:5px;height:5px;"></div>
     </div>
     <!-- Arrow Navigator -->
     <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
@@ -208,9 +208,9 @@
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizing
             function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                var refSize = document.body.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 1200);
+                    refSize = Math.min(refSize, 1920);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {

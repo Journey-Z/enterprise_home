@@ -34,7 +34,11 @@ class HomeController extends Controller
             $menu['menu'][$key] = $key;
         }
         $breadcrumb = $category_arrs[$on_subcategory]['header'];
-        $title = Config::get("home_conf.".$category_name.".title");
-        return view("home.category",compact("title","on_subcategory","menu","category_name","breadcrumb"));
+        $title = $category_arrs[$on_subcategory]['header'];
+        $parent_title = Config::get("home_conf.".$category_name.".title");
+        $title_image = Config::get("home_conf.".$category_name.".title_image");
+        $background_image = Config::get("home_conf.".$category_name.".background_image");
+        return view("home.category",
+            compact("title","on_subcategory","menu","category_name","breadcrumb","title_image","background_image","parent_title"));
     }
 }
