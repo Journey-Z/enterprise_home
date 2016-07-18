@@ -4,29 +4,30 @@
         <div class="fl ft-left">
             <dl class="fl">
                 <dt>关于我们</dt>
-                <dd><a href="#">公司简介</a></dd><dd><a href="#">公司股东</a></dd><dd><a href="#">发展历程</a></dd>
-                <dd><a href="#">合作伙伴</a></dd>
-                <dd><a href="#">行业追踪</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'about',"on_subcategory" => 'introduce'])}}">公司简介</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'about',"on_subcategory" => 'union_win'])}}">东亚-联云（Union Win）</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'about',"on_subcategory" => 'definition'])}}">联云定义</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'about',"on_subcategory" => 'area'])}}">应用领域</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'about',"on_subcategory" => 'solve'])}}">解决问题</a></dd>
             </dl>
             <dl class="fl">
-                <dt>UFA+</dt>
-                <dd><a href="#">背景环境</a></dd><dd><a href="#">创新融合</a></dd>			</dl>
+                <dt>文化与理念</dt>
+                <dd><a href="{{route("category_detail",["category_name" => 'culture_idea',"on_subcategory" => 'idea'])}}">企业理念</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'culture_idea',"on_subcategory" => 'culture'])}}"> 企业文化</a></dd>			</dl>
             <dl class="fl">
-                <dt>对外合作</dt>
-                <dd><a href="#">成为合作伙伴</a></dd><dd><a href="#"> 招投标</a></dd>			</dl>
+                <dt>经营范围</dt>
+                <dd><a href="{{route("category_detail",["category_name" => 'business_scope',"on_subcategory" => 'building'])}}">智能楼宇综合运营</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'business_scope',"on_subcategory" => 'operator'])}}">“运营商+”融合运营</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'business_scope',"on_subcategory" => 'connect_cloud'])}}">物联云平台</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'business_scope',"on_subcategory" => 'wireless'])}}">无线办公平台</a></dd>
+            </dl>
             <dl class="fl">
-                <dt>文化与责任</dt>
-                <dd><a href="#">公司文化</a></dd><dd><a href="#">企业公民</a></dd>			</dl>
-            <dl class="fl">
-                <dt>人力资源</dt>
-                <dd><a href="#">我们的团队</a></dd>
-                <dd><a href="#">我们的理念</a></dd>
-                <dd><a href="#">加入我们</a></dd>
+                <dt>项目优势</dt>
+                <dd><a href="{{route("category_detail",["category_name" => 'advantage',"on_subcategory" => 'project_advantage'])}}">项目优势</a></dd>
             </dl>
             <dl class="fl">
                 <dt>联系我们</dt>
-                <dd><a href="#">联系方式</a></dd>
-                <dd><a href="#">在线留言</a></dd>
+                <dd><a href="{{route("category_detail",["category_name" => 'contact',"on_subcategory" => 'contact_way'])}}">联系方式</a></dd>
             </dl>
             <div class="c"></div>
             <p>? All Rights Reserved 2015 深圳公众信息技术有限公司  京ICP备09099344号&nbsp;&nbsp;<a href="#" class="cr_f" target="_blank">技术支持：方维网络</a></p>
