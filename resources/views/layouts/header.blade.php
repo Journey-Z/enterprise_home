@@ -1,5 +1,5 @@
 <div class="header dw zoom">
-    <h1 class="fl logo"><a href="/" title="深圳市公众信息"><img src="{{asset("assets/images/dongya_logo.png")}}" alt="logo"></a></h1>
+    <h1 class="fl logo"><a href="/" title="深圳东亚信息技术"><img src="{{asset("assets/images/dongya_logo.png")}}" alt="logo"></a></h1>
     <div class="fr menuBox">
         <ul class="zoom">
             <li @if($category_name == "home")class="on" @endif><a href="/">首页</a></li>

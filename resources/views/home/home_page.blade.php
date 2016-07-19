@@ -127,7 +127,7 @@
         <div class="txt_cen"><img src="/Public/home/images/icon/titlet_text1.png"></div>
         <ul class="entry-list zoom">
             <li>
-                <a href="/about/newsInfo/id/70.html">
+                <a href="#">
                     <div class="datetime"><span class="day">25</span><span class="year">2014-12</span></div>
                     <h1> 工业和信息化部关于向民间资本开放宽带...</h1>
                     <h2>
@@ -141,7 +141,7 @@
                         为贯彻落实党的十八大和十八届三中、四中全会精神，按照国务院《关于印发“宽带中国”战略及...</h2>
                 </a>
             </li><li>
-                <a href="/about/newsInfo/id/71.html">
+                <a href="#">
                     <div class="datetime"><span class="day">11</span><span class="year">2015-06</span></div>
                     <h1>横岗街道启动 光网覆盖改造工程</h1>
                     <h2>横岗街道启动 光网覆盖改造工程
