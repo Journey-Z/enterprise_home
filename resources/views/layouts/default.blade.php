@@ -15,28 +15,19 @@
 
 </head>
 <body>
-
-    <!-- site top bar -->
-    {{--    @include('layouts.topbar')--}}
-    <!-- site top bar -->
-            <!-- site header -->
     @include('layouts.header')
-
             <!-- site main -->
     @yield('content')
             <!-- site main -->
-
     <!-- site footer -->
     @include('layouts.footer')
             <!-- site footer -->
-
 @yield('scripts')
 
         <!-- BEGIN: Google Trusted Stores -->
 <script type="text/javascript">
 
 </script>
-<!-- END: Google Trusted Stores -->
 
 </body>
 </html>

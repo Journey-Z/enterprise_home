@@ -1,100 +1,186 @@
 @extends("layouts.default")
 @section('content')
-    <style>
+        <!-- SlidesJS Optional: If you'd like to use this design -->
+<style>
 
-        /* jssor slider bullet navigator skin 01 css */
-        /*
-        .jssorb01 div           (normal)
-        .jssorb01 div:hover     (normal mouseover)
-        .jssorb01 .av           (active)
-        .jssorb01 .av:hover     (active mouseover)
-        .jssorb01 .dn           (mousedown)
-        */
-        .jssorb01 {
-            position: absolute;
-        }
-        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 12px;
-            height: 12px;
-            filter: alpha(opacity=70);
-            opacity: .7;
-            overflow: hidden;
-            cursor: pointer;
-            border: #000 1px solid;
-        }
-        .jssorb01 div { background-color: gray; }
-        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
-        .jssorb01 .av { background-color: #fff; }
-        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+    #slides {
+        display: none
+    }
 
-        /* jssor slider arrow navigator skin 02 css */
-        /*
-        .jssora02l                  (normal)
-        .jssora02r                  (normal)
-        .jssora02l:hover            (normal mouseover)
-        .jssora02r:hover            (normal mouseover)
-        .jssora02l.jssora02ldn      (mousedown)
-        .jssora02r.jssora02rdn      (mousedown)
-        */
-        .jssora02l, .jssora02r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 55px;
-            height: 55px;
-            cursor: pointer;
-            background: url('img/a02.png') no-repeat;
-            overflow: hidden;
-        }
-        .jssora02l { background-position: -3px -33px; }
-        .jssora02r { background-position: -63px -33px; }
-        .jssora02l:hover { background-position: -123px -33px; }
-        .jssora02r:hover { background-position: -183px -33px; }
-        .jssora02l.jssora02ldn { background-position: -3px -33px; }
-        .jssora02r.jssora02rdn { background-position: -63px -33px; }
-    </style>
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+        background-image: url(img/btns-next-prev.png);
+        background-repeat: no-repeat;
+        display:block;
+        width:12px;
+        height:18px;
+        overflow: hidden;
+        text-indent: -9999px;
+        float: left;
+        margin-right:5px;
+    }
 
-    <!--banner start-->
-<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 200px; overflow: hidden; visibility: hidden;">
-    <!-- Loading Screen -->
-    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-        <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+    a.slidesjs-next {
+        margin-right:10px;
+        background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+        background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+        background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+        background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+        width:15px;
+        background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+        background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+        width:18px;
+        background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+        background-position: -41px -18px;
+    }
+
+    #slides .slidesjs-navigation {
+        margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+        margin-right: 5px;
+        float: left;
+    }
+
+    #slides .slidesjs-next {
+        margin-right: 5px;
+        float: left;
+    }
+
+    .slidesjs-pagination {
+        margin: 6px 0 0;
+        float: right;
+        list-style: none;
+        position:absolute;
+        right:930px;
+        top:820px;
+    }
+
+    .slidesjs-pagination li {
+        float: left;
+        margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+        display: block;
+        width: 13px;
+        height: 0;
+        padding-top: 13px;
+        background-image: url("{{asset("assets/images/pagination.png")}}");
+        background-position: 0 0;
+        float: left;
+        overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+        background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+        background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+        color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+        color: #9e2020
+    }
+
+    .navbar {
+        overflow: hidden
+    }
+</style>
+<!-- End SlidesJS Optional-->
+
+<!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+<style>
+    #slides {
+        display: none
+    }
+
+    .container {
+        margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+        body {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .container {
+            width: auto;
+            height: 200px;
+        }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+        .container {
+            width: auto;
+            height: 200px;
+        }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+        .container {
+            width: 724px;
+            height: 200px;
+        }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+        .container {
+            width: auto;
+            height: 700px;
+        }
+    }
+</style>
+
+<!-- SlidesJS Required: Start Slides -->
+<!-- The container is used to define the width of the slideshow -->
+<div class="container">
+    <div id="slides">
+        <img src="{{asset("assets/images/bighome1.jpg")}}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+        <img src="{{asset("assets/images/bighome2.jpg")}}" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+        <img src="{{asset("assets/images/bighome3.jpg")}}" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+        <img src="{{asset("assets/images/bighome4.jpg")}}" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+        <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
     </div>
-    <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
-        {{--<div data-p="112.50" style="display: none;">--}}
-            {{--<img data-u="image" src="{{asset("assets/images/002.jpg")}}" />--}}
-            {{--<div data-u="caption" data-t="0" style="position: absolute; top: 320px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">mobile ready, touch swipe</div>--}}
-        {{--</div>--}}
-        {{--<div data-p="112.50" style="display: none;">--}}
-            {{--<img data-u="image" src="{{asset("assets/images/007.jpg")}}" />--}}
-            {{--<div data-u="caption" data-t="1" data-3d="1" style="position: absolute; top: -50px; left: 125px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">time lined layer animation</div>--}}
-        {{--</div>--}}
-        <div data-p="112.50" style="display: none;">
-            <img data-u="image" src="{{asset("assets/images/slide_1.jpg")}}" />
-            <div data-u="caption" data-t="2" style="position: absolute; top: 30px; left: -380px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">finger catchable right to left</div>
-        </div>
-        <div data-b="0" data-p="112.50" style="display: none;">
-            <img data-u="image" src="{{asset("assets/images/slide_2.jpg")}}" />
-            <div data-u="caption" data-t="7" style="position: absolute; top: -50px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">play in and play out</div>
-        </div>
-        <div data-p="112.50" style="display: none;">
-            <img data-u="image" src="{{asset("assets/images/slide_3.jpg")}}" />
-            <div data-u="caption" data-t="8" data-3d="1" style="position: absolute; top: 25px; left: 150px; width: 250px; height: 250px; background-color: rgba(40,177,255,0.6); overflow: hidden;">
-                <div data-u="caption" data-t="9" style="position: absolute; top: 100px; left: 25px; width: 200px; height: 50px; font-size: 24px; line-height: 50px;">A Child Layer</div>
-            </div>
-        </div>
-    </div>
-    <!-- Bullet Navigator -->
-    <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
-        <div data-u="prototype" style="width:5px;height:5px;"></div>
-    </div>
-    <!-- Arrow Navigator -->
-    <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
-    <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
 </div>
+    <!--banner start-->
 
 <!--banner end-->
 
@@ -124,7 +210,7 @@
 </div>
 <div class="entry-box">
     <div class="dw">
-        <div class="txt_cen"><img src="/Public/home/images/icon/titlet_text1.png"></div>
+        <div class="txt_cen"><img src="{{asset("assets/images/titlet_text2.png")}}"></div>
         <ul class="entry-list zoom">
             <li>
                 <a href="#">
@@ -167,63 +253,21 @@
 @endsection
 
 @section("scripts")
-    <script type="text/javascript" src="{{asset("assets/js/super_slide/jssor.slider.mini.js")}}"></script>
+    <script type="text/javascript" src="{{asset("assets/js/super_slide/jquery.slides.min.js")}}"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-
-            var jssor_1_SlideoTransitions = [
-                [{b:0,d:600,y:-290,e:{y:27}}],
-                [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:87.50,t:-87.50}},{b:11000,d:500,c:{x:-87.50,t:87.50}}],
-                [{b:0,d:600,x:410,e:{x:27}}],
-                [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
-                [{b:-1,d:1,c:{x:175.0,t:-175.0}},{b:0,d:800,c:{x:-175.0,t:175.0},e:{c:{x:7,t:7}}}],
-                [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
-                [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
-                [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
-                [{b:2000,d:600,rY:30}],
-                [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
-                [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
-            ];
-
-            var jssor_1_options = {
-                $AutoPlay: true,
-                $Idle: 2000,
-                $CaptionSliderOptions: {
-                    $Class: $JssorCaptionSlideo$,
-                    $Transitions: jssor_1_SlideoTransitions,
-                    $Breaks: [
-                        [{d:2000,b:1000}]
-                    ]
-                },
-                $ArrowNavigatorOptions: {
-                    $Class: $JssorArrowNavigator$
-                },
-                $BulletNavigatorOptions: {
-                    $Class: $JssorBulletNavigator$
+        $(function() {
+            $('#slides').slidesjs({
+                width: 700,
+                height: 393,
+                play: {
+                    active: true,
+                    auto: true,
+                    interval: 8000,
+                    swap: true,
+                    pauseOnHover: true,
+                    restartDelay: 2500
                 }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = document.body.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 1920);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
+            });
         });
-
-//        jQuery("#picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,delayTime:900,vis:8,scroll:1,trigger:"click"});
     </script>
 @endsection
