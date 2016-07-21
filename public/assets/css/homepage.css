@@ -1,0 +1,229 @@
+        .divShowImg {
+            margin: 0px;
+        }
+        .divContentW {
+            width: 100%;
+            height: 420px;
+            float: left;
+        }
+        .divContentB {
+            width:100%;
+            height:420px;
+            float:left;
+            background-color:#2A96EA;
+        }
+        .divContent_show {
+            width:970px;
+            height:360px;
+            margin: 30px auto;
+        }
+        .divContent_show img{
+            /*height:360px;*/
+        }
+        .divPoYun {
+            width:100%;
+            height:700px;
+            float:left;
+        }
+        .divPoYun_Content {
+            width:970px;
+            height:630px;
+            margin: 0px auto;
+        }
+        .divPoYun_Content_up {
+            width:100%;
+            height:100px;
+            margin: 50px auto;
+        }
+        .divPoYun_Content_up_line {
+            height:50px;float:left;width:300px;position:relative;border-top:1px solid #b5b3b3;
+        }
+        .divPoYun_Content_top {
+           height:100px;float:left;width:300px;position:relative;
+        }
+        .divPoYun_Content_left {
+            height:50px;float:left;width:300px;position:relative;
+        }
+        .divPoYun_Content_up_text {
+            line-height:100px;
+            font-size:40px;
+            font-weight:bolder;
+            text-align:center;
+            color: #636363;
+            height:100px;
+            float:left;
+            width:370px
+        }
+        .divPoYun_Content_down {
+            width:100%;
+            height:500px;
+            margin: 0px auto;
+        }
+        .divPoYun_Content_down_div {
+            position: relative;
+            float: left;
+            margin: 0px 5px 15px;
+            width: 232px;
+            height: 240px;
+            text-align: center;
+        }
+        .divPoYun_Content_down_spanTitle{
+            position: relative;
+            font-size: 18px;
+            line-height: 45px;
+            color: #484747;
+            font-weight: 700;
+        }
+        .divPoYun_Content_down_spanText{
+            margin: 0px 11px;
+            line-height: 23px;
+            position: relative;
+            float: left;
+            text-align: left;
+        }
+        .divContentW_left {
+            float:left;
+        }
+        .divContentW_right1 {
+            float: left;
+            white-space: normal;
+            width: 496px;
+            margin: 0px 0px 0px 90px;
+        }
+        .divContentW_right1_h1 {
+            font-size: 40px;
+            line-height: 85px;
+            color: rgb(99, 99, 99);
+            font-family: Microsoft YaHei;
+        }
+        .a1 {
+            color:#ea5413;
+            font-size: 40px;
+            font-family: Microsoft YaHei;
+        }
+        .a2 {
+            color:#00B5FF;
+            font-size: 22px;
+            font-family: Microsoft YaHei;
+        }
+        .a1:hover{
+            border-bottom: 1px solid #ea5413;
+        }
+        .a2:hover{
+            border-bottom: 1px solid #00B5FF;
+        }
+        .divContentW_right1_h2 {
+            font-size: 22px;
+            line-height: 55px;
+            color: #000;
+        }
+        .divContentW_right1_h3 {
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .divContentW_right1_h3 span{
+            margin:0px 75px 0px 0px;
+        }
+        .divContentW_right2 {
+            float: left;
+            white-space: normal;
+            width: 425px;
+            color: #00B5FF;
+            margin: 0px 0px 0px 85px;
+            top: -15px;
+            position: relative;
+        }
+        .divContentW_right2 ul{
+            line-height: 28px;
+            position: relative;
+            list-style:outside none none;
+        }
+        .divContentW_right2_h1 {
+            font-size: 22px;
+            font-family: Microsoft YaHei;
+            line-height: 55px;
+            position: relative;
+        }
+        .divContentW_right2_h2 {
+            line-height:22px;
+        }
+        .divContentB_left {
+            float:right;
+        }
+        .divContentB_right1 {
+            float: left;
+            white-space: normal;
+            width: 420px;
+            color: #FFF;
+        }
+        .divContentB_right1_h1 {
+            font-size: 22px;
+            font-family: Microsoft YaHei;
+            line-height: 55px;
+        }
+        .divContentB_right1_h2 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .divContentB_right1 ul {
+            position: relative;
+            line-height: 28px;
+            top: 5px;
+            color: #FFF;
+            list-style:outside none none;
+        }
+        .divContentB_right2 {
+            float: left;
+            white-space: normal;
+            width: 303px;
+            color: #FFF;
+            position: relative;
+            top: 25px;
+        }
+        .divContentB_right2_h1 {
+            font-size: 22px;
+            font-family: Microsoft YaHei;
+            line-height: 65px;
+        }
+        .divContentB_right2_h2 {
+            line-height: 28px;
+            position: relative;
+            float: left;
+        }
+        .divContent_link {
+            border: 0px solid;
+            background-color: #FFF;
+            border-radius: 25px;
+            height: 25px;
+            width: 88px;
+            color: #2A96EA;
+            line-height: 25px;
+            position: absolute;
+            padding-left: 20px;
+            padding-right: 5px;
+        }
+        .divContent_link_i {
+            width: 15px;
+            height: 15px;
+            top: 5px;
+            right: 10px;
+            position: absolute;
+            border-radius: 15px;
+            line-height: 14px;
+            text-align: center;
+            background-color: #2A96EA;
+            color: #FFF;
+            float: right;
+        }
+        .ortherlink {
+            width: 95px;
+            float: left;
+            opacity:1;
+            filter:alpha(opacity=100);
+            position: relative;
+            top: 20px;
+        }
+        .ortherlink:hover {
+            opacity:0.75;
+            filter:alpha(opacity=75);
+         }

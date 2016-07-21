@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 /* ��վͨ�� */
-body,input,textarea,select,a{ font:12px/1.5 "΢���ź�",tahoma,arial,sans-serif; color: #333;}
+body,input,textarea,select,a{ font:12px/1.5 "���ź�",tahoma,arial,sans-serif; color: #333;font-family: Microsoft YaHei;}
 html,body,form,iframe,dl,dd,img,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,input { margin: 0; padding: 0; border: 0; }
 ul,ol,li { list-style-type: none; }
 a img,iframe { border: none}

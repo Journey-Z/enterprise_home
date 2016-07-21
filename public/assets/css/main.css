@@ -1,0 +1,525 @@
+        * {
+        margin:0px;
+        padding:0px;
+        }
+        body {
+            border:0px solid;
+            font-size:14px;
+            /*font-family: "宋体";*/ 
+            font-family:"Microsoft YaHei","微软雅黑";
+            color:#535353;
+        }
+        .divContent_link,.divContent_link_i{
+          z-index:9999;
+          -moz-border-radius: 16px; /* Firefox */
+          -webkit-border-radius: 16px; /* Safari 和 Chrome */
+          border-radius: 16px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+          behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
+        }
+        #img1 {
+            left: 0px;z-index: 0;
+        }
+        #img2 {
+            left: 230px;z-index: 1;
+        }
+        #img3 {
+            left: 460px;z-index: 2;
+        }
+        #img4 {
+            left: 690px;z-index: 3;
+        }
+        div {
+            border:0px solid;
+        }
+        a {
+            cursor:pointer;
+        }
+        a:link {
+                color:#7e7d7d;
+            }
+        a:active {
+                color:#7e7d7d;
+            }
+        a:after {
+                color:#7e7d7d;
+            }
+        a:link {
+            text-decoration: none;
+        }
+        u{
+            text-decoration: none;
+        }
+.da {
+    color: #e8ebeb !important;
+    font-family: Microsoft YaHei;
+}
+.da:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+        .divButtom {
+            width:100%;
+            height:235px;
+            float:left;
+            background-color:#2e2b2b;
+            top: 50px;
+            position:relative;
+    left: -1px;
+}
+        .divButtomContent {
+            width:970px;
+            height:235px;
+            margin: 0px auto;
+        }
+        .divButtomText {
+            font-size: 18px;
+            color: #FFF;
+            line-height: 45px;
+        }
+        .buttomNav {
+            float:left;
+            position:relative;
+            top: 0px;
+            left: 0px;
+        }
+        .buttomDown {
+            border-top:1px solid #535353;
+            float:left;
+            margin:0px auto;
+            text-align:center;
+            width:100%;
+            height:40px;
+            font-family:Arial;
+            font-size:12px;
+            color:#b1acac;
+            padding-top: 25px;
+            line-height: 25px;
+        }
+        .buttomUp {
+            height:140px;
+            width:100%;
+            margin:0 auto;
+            color:#535353;
+        }
+        .buttomUp ul {
+            float: left;
+            width: 193px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            line-height: 25px;
+            text-align: center;
+        }
+        .buttomUp ul li{
+            list-style:outside none none;
+        }
+        .buttomUp ul li:nth-child(1) {
+            font-size: 18px;
+            color: #FFF;
+            line-height: 45px;
+        }
+        .buttomUp ul li a {
+            color:#A8A8A8;
+            border-bottom: 0px solid
+         }
+        .buttomUp ul li a:hover {
+            color:#D7D7D7;
+            border-bottom: 1px solid #D7D7D7;
+            cursor:pointer;
+         }
+        .mainNav {
+            float: right;
+            position: relative;
+            margin: 30px 0px 0px;
+            font-family:"Microsoft YaHei","微软雅黑";
+        }
+        .mainNav li {
+            list-style:outside none none;
+            float:left;
+        }
+        .mainNav li a {
+            font-size:18px;
+            /*font-weight:700;*/
+            margin:25px;
+            color:#414141;
+        }
+        .mainNav li a:hover {
+            color:#ff6a00;
+            border-bottom: 2px solid #ff6a00;
+            cursor:pointer;
+        }
+        .divMain {
+         width:100%;
+         min-width:1024px;
+         width:expression(document.body.clientWidth < 1024? "1024px": "100%" );
+        }
+        .divTop {
+            width:100%;
+            height:90px;
+            float:left;
+        }
+        .divTop_mainNav {
+            width:970px;
+            height:66px;
+            margin: 0px auto;
+            top:15px;
+            position:relative;
+        }
+        .logo {
+            position: relative;
+            float: left;
+            margin: 4px 0px;
+        }
+        #logo ,.hot:hover{
+            cursor:pointer;
+        }
+        .hot {
+            position: relative;
+            float: right;
+            top: -46px;
+            right: 190px;
+        }
+        .divShowImg {
+            width:100%;
+            min-width: 1024px;
+            width:expression(document.body.clientWidth < 1024? "1024px": "100%" );
+            float:left;
+            height:auto;
+            margin-bottom: -44px;
+        }
+        .divShowImg img{
+          width: 100%;
+        }
+        .divShowImg_1 {
+            width:100%;
+            float:left;
+            height:auto;
+            min-width: 1024px;
+            width:expression(document.body.clientWidth < 1024? "1024px": "100%" );
+        }
+        .divShowImg_1 img {
+            width:100%;
+        }
+        .act {
+            border-bottom: 2px solid #ff6a00;
+        }
+        /*loadside*/
+        .div_i_content {
+            width:100%;
+        }
+        .div_i_content_center {
+            margin:0px auto;width:970px;
+        }
+        .img_h {
+            float:left;
+            top:26px;
+            position:relative;
+            
+        }
+        .span_h {
+            font-size: 26px;
+            line-height: 92px;
+            float: left;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            width:930px;
+        }
+        .div_i_content_centter_1_1 {
+            float: left;
+            position: relative;
+            width: 100%;
+            margin:0px;
+            overflow:hidden;
+        }
+        .div_i_content_centter_1_1_div_text {
+            width: 920px;
+            margin-left: 30px;
+            color:#535353;
+            line-height:30px;
+            white-space:normal;
+            float: left;
+            position: relative;
+        }
+        .div_i_content_centter_1_1_div_text2 {
+            width: 930px;
+            margin: 0px 20px;
+            float: left;
+        }
+        .div_i_content_centter_1_1_div_text2 table{
+            width:100%;
+         }
+        .div_i_content_centter_1_1_div_text2 table tr{
+            width:100%;
+            height:230px;
+         }
+        .div_i_content_centter_1_1_div_text2 table tr td {
+            width:280px;
+            text-align:center;
+            position:relative;
+            line-height:20px;
+            padding-top:-20px;
+            padding-bottom:0px;
+            padding-left:10px;
+            padding-right:10px;
+           line-height:20px
+         }
+        .text_span_1 {
+            color: #414141;
+            font-size: 16px;
+            line-height: 35px;
+            font-weight: 700;
+            float:left;
+            width:100%;
+        }
+        .divContent {
+            position: relative;
+            z-index: 9999;
+            font-family: "Microsoft YaHei","微软雅黑";
+            margin: 0px auto;
+            width: 970px;
+        }
+        .divContent_2 {
+            margin: 0px auto;
+            width: 440px;
+            position: relative;
+        }
+        .divContent_1{
+            margin: 0px auto;
+            width: 650px;
+            position: relative;
+        }
+        .divContent ul {
+            float: left;
+            position: relative;
+         }
+        .divContent ul li {
+            color:#fff;
+            width:208px;
+            line-height:40px;
+            position:relative;
+            float:left;
+            list-style:outside none none;
+            text-align: center;
+            font-size:16px;
+            padding:0px 2px;
+            margin:0px 2px;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+        }
+        .divContent ul li:first-child {
+                padding-left:0px;
+                margin-left:0px;
+            }
+        .divContent ul li:last-child {
+                padding-right:0px;
+                margin-right:0px;
+            }
+        .divContent ul li:hover{
+            background-color:#00B5FF;
+            cursor:pointer;
+            background:url(/image/b-bg.png) 0px 0px no-repeat;
+        }
+        .divContent ul li a{
+            width:195px;
+            height:40px;
+        }
+        .divContentNavNon {
+            /*background-color:#808080;*/
+            background:url(/image/g-bg.png) 0px 0px no-repeat;
+        }
+        .divContentNavActive {
+            /*background-color:#00B5FF;*/
+            background:url(/image/b-bg.png) 0px 0px no-repeat;
+        }
+        /*service*/
+        .div_iii_content_centter_1_1 {
+            height: auto;
+            width: 100%;
+            float: left;
+        }
+        .img_top {
+            top: 1px;
+            position: relative;
+            margin: 0px 20px;
+        }
+        .abouttitle {
+            float: left;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 15px 0px 0px;
+        }
+        .abouttitletext {
+            line-height: 30px;
+            top: -6px;
+            position: relative;
+            cursor:pointer;
+        }
+        .abouttitletext_2 {
+            line-height: 30px;
+            top: -6px;
+            position: relative;
+            color: #ff6a00;
+        }
+        .aboutdivinfo {
+            float: left;
+            position: relative;
+            width: 100%;
+            margin: 50px auto 0px;
+            overflow: hidden;
+        }
+        .aboutjoinimg {
+            position: relative;
+            float: left;
+            width: 190px;
+            text-align:center;
+            margin:15px auto;
+        }
+        .aboutjoinimg span{
+            position: relative;
+            line-height:50px;
+        }
+        .aboutjoinview {
+            width: 80%;
+            height: 80%;
+            color: #535353;
+            margin: 10px auto;
+            border: 0px solid;
+            text-align: left;
+            border-top-right-radius:5px;
+            padding:25px;
+            text-wrap:normal;
+        }
+        .aboutjoinview_title {
+            color: rgb(0, 0, 0);
+            font-size: 28px;
+            line-height: 56px;
+        }
+        .aboutjoinview_h {
+            font-size: 22px;
+            color: rgb(230, 150, 32);
+            line-height: 35px;
+        }
+        .aboutjoinview p{
+            padding: 0px;
+            margin: 5px 30px;
+        }
+        .aboutjoinimg:hover {
+            cursor:pointer;
+        }
+        .aboutecaray {
+            float: left;
+            position: relative;
+            overflow: hidden;
+            margin: 25px 20px -30px;
+            height: 400px;
+            width: 95%;
+        }
+        .aboutecarshaow {
+            float: left;
+            overflow: hidden;
+            margin: 0px;
+            height: 400px;
+            width: 100%;
+        }
+        #divUs {
+            width: 100%;
+            height: auto;
+            margin-top: 25px;
+            position: relative;
+            float: left;
+        }
+        .div_o,.div_w,.div_long1,.div_long2,.div_img1,.div_img2,.div_img3,.div_img4,.div_img5,.div_img6 {
+            border: 0px solid;
+            border-radius: 5px;
+            margin:4px;
+            height:172px;
+            position:relative;
+            float:left;
+            margin:4px;
+            overflow:hidden;
+            z-index:0;
+            -moz-border-radius: 6px; /* Firefox */
+            -webkit-border-radius: 6px; /* Safari 和 Chrome */
+            border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+            behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
+        }
+        #divUs img {
+            border: 0px solid;
+            border-radius: 5px;
+        }
+        .div_img1 {
+            width:314px;
+            background: url(/image/aboutus/aboutus010002.jpg) 0px 0px no-repeat;
+        }
+        .div_img2 {
+            width:314px;
+            background: url(/image/aboutus/aboutus010003.jpg) 0px 0px no-repeat;
+        }
+        .div_img3 {
+            width:314px;
+            background: url(/image/aboutus/aboutus010004.jpg) 0px 0px no-repeat;
+        }
+        .div_img4 {
+            width:314px;
+            background: url(/image/aboutus/aboutus010005.jpg) 0px 0px no-repeat;
+        }
+        .div_img5 {
+            width:314px;
+            background: url(/image/aboutus/aboutus010006.jpg) 0px 0px no-repeat;
+        }
+        .div_img6 {
+            width:314px;
+            background: url(/image/aboutus/aboutus010007.jpg) 0px 0px no-repeat;
+        }
+        .div_long1 {
+            width:636px;
+            background: url(/image/aboutus/aboutus010001_1.jpg) 0px 0px no-repeat;
+        }
+        .div_long2 {
+            width:636px;
+            background: url(/image/aboutus/aboutus010008.jpg) 0px 0px no-repeat;
+        }
+        .div_w {
+            float: left;
+            position: relative;
+            width: 314px;
+            height: 172px;
+            color: #ff6a00;
+            background-color: #C9C9C9;
+        }
+        .div_o {
+            color: #fff;
+            background-color: #ff6a00;
+            width: 314px;
+        }
+        #divUs span {
+            float: left;
+            padding: 25px;
+            margin: 25px;
+            line-height: 35px;
+            font-size: 24px;
+            position:absolute;
+        }
+        .div_show_img {
+                    position: absolute;
+                    float: left;
+                    width: 572px;
+                }
+.div_span_hid {width: 100%;height: 35px;line-height: 35px;position: relative;float: none;z-index: 9999;background-color: rgb(255, 106, 0);opacity:0.5;filter:alpha(opacity=50);color: #242424;top: -39px;display:none;text-indent:2em;}
+.divwelfare {position: absolute;z-index: 9999;line-height: 30px;left: 0px;float: left;top: 440px;}
+.divfades {border: 0px solid;border-radius: 5px;height: 172px;width: 314px;position: absolute;background-color: #777777;opacity: 0.57;filter:alpha(opacity=57);display: none;}
+.aboutusmessage {float: left;width: 100%;position: relative;margin: 45px 0px;line-height: 28px;margin: 10px 0px 0px;}
+.aboutuschild {color: #ff6a00;font-size: 18px;line-height: 50px;margin-top: 25px;}
+.contentup,.contentupmin{float:left;width:100%;text-align:center;}
+.condowndiv{float:left;position:relative;width:100%;margin: 7px auto;}
+.contectuptitle {float:left;width:100%;text-align:center;line-height:70px;font-size:28px;}
+.downtitle {float:left;position:relative;width:230px;text-align:right;font-size:20px;
+    top: 0px;
+    left: 0px;
+}
+.downconten {float:left;position:relative;width:700px;margin:0px 0px 0px 40px;line-height:25px;}
+.downbtn {border:2px solid #5e5e5e;width:180px;height:35px;line-height:35px;text-align:center;margin:25px 0px;cursor:pointer;}
+.downbtn:hover {background-color:#535353;color:#FFF;}
+.downimgbtn {float:right;text-align:right;cursor:pointer;right: 50px;position: relative;}

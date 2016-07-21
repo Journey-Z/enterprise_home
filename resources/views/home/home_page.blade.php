@@ -1,8 +1,9 @@
 @extends("layouts.default")
+<link rel="stylesheet" type="text/css" href="{{asset("assets/css/main.css")}}">
+<link rel="stylesheet" type="text/css" href="{{asset("assets/css/homepage.css")}}">
 @section('content')
         <!-- SlidesJS Optional: If you'd like to use this design -->
 <style>
-
     #slides {
         display: none
     }
@@ -77,7 +78,7 @@
         list-style: none;
         position:absolute;
         right:930px;
-        top:820px;
+        top:750px;
     }
 
     .slidesjs-pagination li {
@@ -163,11 +164,12 @@
     @media (min-width: 1200px) {
         .container {
             width: auto;
-            height: 700px;
+            height: auto;
         }
     }
 </style>
-
+<link rel="stylesheet" type="text/css" href="{{asset("assets/css/main.css")}}">
+<link rel="stylesheet" type="text/css" href="{{asset("assets/css/homepage.css")}}">
 <!-- SlidesJS Required: Start Slides -->
 <!-- The container is used to define the width of the slideshow -->
 <div class="container">
@@ -186,31 +188,91 @@
 
 
 <!--content start-->
-<div class="dw cover-box">
-    <ul class="zoom">
-        <li>
-            <a href="http://test5.szfangwei.net/gongzhong/ufa/index/id/76.html">
-                <img src="{{asset("assets/images/cover_box_1_front.jpg")}}" class="img1">
-                <img src="{{asset("assets/images/cover_box_1_behind.jpg")}}" class="img2">
-            </a>
-        </li>
-        <li>
-            <a href="http://test5.szfangwei.net/gongzhong/ufa/index/id/77.html">
-                <img src="{{asset("assets/images/cover_box_2_front.jpg")}}" class="img1">
-                <img src="{{asset("assets/images/cover_box_2_behind.jpg")}}" class="img2">
-            </a>
-        </li>
-        <li>
-            <a href="http://test5.szfangwei.net/gongzhong/ufa/index/id/78.html">
-                <img src="{{asset("assets/images/cover_box_3_front.jpg")}}" class="img1">
-                <img src="{{asset("assets/images/cover_box_3_behind.jpg")}}" class="img2">
-            </a>
-        </li>
-    </ul>
+<div class="divMain">
+    <div class="divContentW" style="background-color:white;">
+        <div class="divContent_show">
+            <div class="divContentW_left">
+                <img src="{{asset("assets/images/home_content/home0002.jpg")}}" />
+            </div>
+            <div class="divContentW_right1">
+                <span class="divContentW_right1_h1">亿车<span style="font-size: 14px;top: -8px;position: relative;margin: 0px 8px;">●</span><a class="a1" href='#' style="color:#ea5413;">泊云</a></span><br />
+                <span class="divContentW_right1_h2"><a class="a2" href='#' style="color:#00B5FF;">泊云</a>的定义</span><br />
+                <span class="divContentW_right1_h3">泊云，是亿车科技潜心研发，面向城市停车运维管理和车主服务推出的整体信息化集成解决方案</span>
+                <br /><br />
+                <span class="divContentW_right1_h2"><a class="a2" href='#' style="color:#00B5FF;">泊云</a>的应用领域</span><br />
+                <span class="divContentW_right1_h3"><span>城市路边停车</span><span>智慧停车场</span><span>车联网增值服务</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="divContentB">
+        <div class="divContent_show">
+            <div class="divContentB_left">
+                <img src="{{asset("assets/images/home_content/home0003.jpg")}}" />
+            </div>
+            <div class="divContentB_right1">
+                <span class="divContentB_right1_h1">智慧路边停车</span><br />
+                <span class="divContentB_right1_h2">解决哪些问题</span>
+                <ul >
+                    <li >●  路内车辆乱停乱放，泊位周转率低</li>
+                    <li >●  人均管理车位数少，人力成本较高</li>
+                    <li >●  人工模式存在乱收费，无证收费现象</li>
+                    <li >●  计时计费不准确</li>
+                    <li >●  缺乏有效监督，费用流失严重，人员无法有效管理</li>
+                    <li >●  信息化和智能化管理水平不高，无法建立科学、规范、实时、高效的停车信息系统</li>
+                </ul>
+                {{--<a id="a1more" href="LoadSide.html" class="ortherlink">--}}
+                    {{--<div class="divContent_link">了解更多--}}
+                        {{--<div class="divContent_link_i">></div>--}}
+                    {{--</div>--}}
+                {{--</a>--}}
+            </div>
+        </div>
+    </div>
+    <div class="divContentW"  style="background-color:white;">
+        <div class="divContent_show">
+            <div class="divContentW_left">
+                <img src="{{asset("assets/images/home_content/home0004.jpg")}}" />
+            </div>
+            <div class="divContentW_right2">
+                <span class="divContentW_right2_h1">智慧停车场</span><br />
+                <ul >
+                    <li >●  快速通行：无需刷卡/取票，1秒超速识别入场，杜绝闸口阻塞</li>
+                    <li >●  精准引导：为车主提供实时泊位数据、入场引导及场内泊位引导，提升整体服务质量</li>
+                    <li >●  缴费方便：多渠道充值缴费方式，包含手机APP、自助缴费机、手持PDA及中央收费站等</li>
+                    <li >●  节约成本：避免传统刷卡/取票系统产生的卡片及票据介质损耗，降低后期运营成本</li>
+                    <li >●  增加营收：通过泊云数据平台进行数据联网及商业挖掘，帮助停车场导流，实现车后服务和本地化服务接入，增加停车场收入</li>
+                    <li >●  智能管理：完全自动计费、扣费，高效省心，管理轻松</li>
+                </ul>
+                {{--<a id="a2more" href="newParking.html" class="ortherlink">--}}
+                    {{--<div class="divContent_link" style="background-color:#ff6a00;color:#fff;">了解更多--}}
+                        {{--<div class="divContent_link_i" style="background-color:#fff;color:#ff6a00;">></div>--}}
+                    {{--</div>--}}
+                {{--</a>--}}
+            </div>
+        </div>
+    </div>
+
+    <div class="divContentB">
+        <div class="divContent_show">
+            <div class="divContentB_left">
+                <img src="{{asset("assets/images/home_content/home0005.jpg")}}" />
+            </div>
+            <div class="divContentB_right2">
+                <span class="divContentB_right2_h1">车联网增值服务</span><br />
+                <span class="divContentB_right2_h2">通过泊云大数据平台进行大数据分析，实现精准营销，开拓车后服务市场及本地化生活服务市场，包括洗车、维修、代驾、保养及购物、餐饮、娱乐等停车场周边服务接入</span><br />
+                {{--<a id="a3more" href="newParking.html?type=2" class="ortherlink">--}}
+                    {{--<div class="divContent_link">了解更多--}}
+                        {{--<div class="divContent_link_i">></div>--}}
+                    {{--</div>--}}
+                {{--</a>--}}
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="entry-box">
     <div class="dw">
-        <div class="txt_cen"><img src="{{asset("assets/images/titlet_text2.png")}}"></div>
+        <div class="txt_cen"><img src="{{asset("assets/images/titlet_text1.png")}}"></div>
         <ul class="entry-list zoom">
             <li>
                 <a href="#">
@@ -258,7 +320,7 @@
         $(function() {
             $('#slides').slidesjs({
                 width: 700,
-                height: 393,
+                height: 235,
                 play: {
                     active: true,
                     auto: true,

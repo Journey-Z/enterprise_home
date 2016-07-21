@@ -33,7 +33,7 @@
             <p>? All Rights Reserved 2015 深圳东亚信息技术有限公司  京ICP备09099344号&nbsp;&nbsp;</p>
         </div>
         <div class="fr ft-right zoom">
-            <img src="/Public/upload/products/20150415145048cyhmyu.jpg">
+            <img src="{{asset("assets/images/qrcode.png")}}">
             <p class="ft_14">东亚信息官方微信</p>
             <div class="fr share"><span class="fl">分享到 :&nbsp; </span>
                 <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
